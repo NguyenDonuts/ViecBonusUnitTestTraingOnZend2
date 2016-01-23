@@ -21,4 +21,9 @@ class Calculator {
         }
         return $a+$b;
     }
+    
+    function gpa($grade, $class_id1,$class_id2) {
+        return ($grade->getGradeOfStudent($class_id1) 
+                + $grade->getGradeOfStudent($class_id2) ) / 2;
+    }
 }
